@@ -54,8 +54,8 @@ f3 = lambda x: 3 - x * math.sin(x)
 
 sol1 = binarySolver(f1, 1, 2, 0.0001)
 sol2 = binaryMulSolver(f3, 0, 30, 0.0001)
-print(f"sol1={sol1:.5f}",end=":",sep=",")
-print("    sol11=%10.7f" % sol1)
+print(f"sol1={sol1:.5f}")
+print("sol1=%.7f" % sol1) # 不同的format string写法
  
  
 for i, s2 in enumerate(sol2):
